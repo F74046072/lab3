@@ -1,0 +1,35 @@
+sort複雜度:nlogn
+insertion_sort複雜度:n^2
+insertion_sort/sort=n/logn
+預期後者時間為前者的n/logn倍
+
+1000
+sort(): 0.001 seconds
+v1/v2 are different.
+insertion_sort(): 0.015 seconds
+v1/v2 are the same.
+預期:1000/3=333倍
+實際:0.015/0.001=15倍
+
+10000
+sort(): 0.008 seconds
+v1/v2 are different.
+insertion_sort(): 0.725 seconds
+v1/v2 are the same.
+預期:10000/4=2500倍
+實際:0.725/0.008=90.625倍
+
+100000
+sort(): 0.08 seconds
+v1/v2 are different.
+insertion_sort(): 81.984 seconds
+v1/v2 are the same.
+預期:100000/5=20000倍
+實際:81.984/0.08=1024.38倍
+
+1000000
+sort(): 0.54 seconds
+v1/v2 are different.
+insertion_sort(): 未知
+數據預期秒數:0.54*(16667/20)=4500秒
+預期:1000000/6=16667倍
